@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADC05CEE-5B73-4270-AD07-ABFEBBEC1948}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CamelUpCalculator</RootNamespace>
+    <AssemblyName>CamelUpCalculator</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calculators\AllResultsCalculator.cs" />
+    <Compile Include="Calculators\MatrixCalculator.cs" />
+    <Compile Include="Entities\AllResults.cs" />
+    <Compile Include="Entities\BaseResults.cs" />
+    <Compile Include="Game\Bets.cs" />
+    <Compile Include="Calculators\Calculator.cs" />
+    <Compile Include="Entities\EndBet.cs" />
+    <Compile Include="Game\GameState.cs" />
+    <Compile Include="Entities\LegBet.cs" />
+    <Compile Include="Entities\LegResult.cs" />
+    <Compile Include="Entities\EndResult.cs" />
+    <Compile Include="MatrixRepository.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Calculators\LegResultCalculator.cs" />
+    <Compile Include="Entities\ModifierResult.cs" />
+    <Compile Include="Calculators\ModifierResultCalculator.cs" />
+    <Compile Include="Calculators\PermutationCalculator.cs" />
+    <Compile Include="Calculators\PositionsCalculator.cs" />
+    <Compile Include="Calculators\PositionSimulator.cs" />
+    <Compile Include="Calculators\RollsetCalculator.cs" />
+    <Compile Include="Entities\Camel.cs" />
+    <Compile Include="Entities\Colour.cs" />
+    <Compile Include="Game\Dice.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Entities\Modifier.cs" />
+    <Compile Include="ConsoleCommands.cs" />
+    <Compile Include="Printer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Roll.cs" />
+    <Compile Include="Calculators\EndResultCalculator.cs" />
+    <Compile Include="Entities\SimulationState.cs" />
+    <Compile Include="ThreadSafeRandom.cs" />
+    <Compile Include="Entities\Square.cs" />
+    <Compile Include="Game\BoardState.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

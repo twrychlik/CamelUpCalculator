@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamelUpCalculator", "CamelUpCalculator\CamelUpCalculator.csproj", "{ADC05CEE-5B73-4270-AD07-ABFEBBEC1948}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADC05CEE-5B73-4270-AD07-ABFEBBEC1948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC05CEE-5B73-4270-AD07-ABFEBBEC1948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC05CEE-5B73-4270-AD07-ABFEBBEC1948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC05CEE-5B73-4270-AD07-ABFEBBEC1948}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE64C21F-C027-4B53-980A-77DDC4BF9204}
+	EndGlobalSection
+EndGlobal
